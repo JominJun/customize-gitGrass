@@ -1,12 +1,14 @@
 const halloween = ["#ebedf0", "#ffee4a", "#ffc501", "#fe9600", "#03001c"];
 
 const updateCommitColor = (colorList) => {
+  day = new Date().getDay()
+  
   chrome.tabs.executeScript(
     {
       code:
         `
         rectFillList = [];
-        for(let i=0; i<365; i++){
+        for(let i=0; i<365+${day}; i++){
           rectFillList.push(document.getElementsByTagName('rect')[i].getAttribute('fill'))
         }
         rectFillList

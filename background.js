@@ -1,8 +1,8 @@
-const halloween = ["#ebedf0", "#ffee4a", "#ffc501", "#fe9600", "#03001c"];
-const ocean = ["#ebedf0", "#79b8ff", "#2188ff", "#005cc5", "#032f62"];
-const orange = ["#ebedf0", "#ffab70", "#f66a0a", "#e36209", "#d15704"];
-const red = ["#ebedf0", "#fdaeb7", "#ea4a5a", "#cb2431", "#9e1c23"];
-const purple = ["#ebedf0", "#d1bcf9", "#8a63d2", "#5a32a3", "#3a1d6e"];
+const HALLOWEEN = ["#ebedf0", "#ffee4a", "#ffc501", "#fe9600", "#03001c"];
+const OCEAN = ["#ebedf0", "#79b8ff", "#2188ff", "#005cc5", "#032f62"];
+const ORANGE = ["#ebedf0", "#ffab70", "#f66a0a", "#e36209", "#d15704"];
+const RED = ["#ebedf0", "#fdaeb7", "#ea4a5a", "#cb2431", "#9e1c23"];
+const PURPLE = ["#ebedf0", "#d1bcf9", "#8a63d2", "#5a32a3", "#3a1d6e"];
 
 const updateCommitColor = (colorList) => {
   day = new Date().getDay();
@@ -48,20 +48,20 @@ const setTheme = (colorList) => {
 
 const changeColor = (theme) => {
   switch (theme) {
-    case "halloween":
-      setTheme(halloween);
+    case "HALLOWEEN":
+      setTheme(HALLOWEEN);
       break;
-    case "ocean":
-      setTheme(ocean);
+    case "OCEAN":
+      setTheme(OCEAN);
       break;
-    case "orange":
-      setTheme(orange);
+    case "ORANGE":
+      setTheme(ORANGE);
       break;
-    case "red":
-      setTheme(red);
+    case "RED":
+      setTheme(RED);
       break;
-    case "purple":
-      setTheme(purple);
+    case "PURPLE":
+      setTheme(PURPLE);
       break;
   }
 };

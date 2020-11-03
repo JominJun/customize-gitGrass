@@ -8,21 +8,197 @@
       html,
       body {
         width: 230px;
-        min-height: 400px;
         margin: 0;
+        background-color: #fff;
       }
+
+      header {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ddf7e9;
+      }
+
+      footer {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      #logo {
+        height: 15px;
+        float: left;
+      }
+
+      #theme_condition {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      .themes {
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+      }
+
+      .theme_name {
+        height: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        float: left;
+        font-size: 10px;
+      }
+
+      .palette_wrap {
+        float: right;
+      }
+
+      .palette {
+        width: 10px;
+        height: 10px;
+        float: left;
+        margin-right: 3px;
+        border-radius: 2px;
+      }
+
+      #ORIGINAL1 {background-color: #ebedf0;}
+      #ORIGINAL2 {background-color: #9be9a8;}
+      #ORIGINAL3 {background-color: #40c463;}
+      #ORIGINAL4 {background-color: #30a14e;}
+      #ORIGINAL5 {background-color: #216e39;}
+
+      #HALLOWEEN1 {background-color: #ebedf0;}
+      #HALLOWEEN2 {background-color: #ffee4a;}
+      #HALLOWEEN3 {background-color: #ffc501;}
+      #HALLOWEEN4 {background-color: #fe9600;}
+      #HALLOWEEN5 {background-color: #03001c;}
+
+      #OCEAN1 {background-color: #ebedf0;}
+      #OCEAN2 {background-color: #79b8ff;}
+      #OCEAN3 {background-color: #2188ff;}
+      #OCEAN4 {background-color: #005cc5;}
+      #OCEAN5 {background-color: #032f62;}
+
+      #ORANGE1 {background-color: #ebedf0;}
+      #ORANGE2 {background-color: #ffab70;}
+      #ORANGE3 {background-color: #f66a0a;}
+      #ORANGE4 {background-color: #e36209;}
+      #ORANGE5 {background-color: #d15704;}
+
+      #RED1 {background-color: #ebedf0;}
+      #RED2 {background-color: #fdaeb7;}
+      #RED3 {background-color: #ea4a5a;}
+      #RED4 {background-color: #cb2431;}
+      #RED5 {background-color: #9e1c23;}
+
+      #PURPLE1 {background-color: #ebedf0;}
+      #PURPLE2 {background-color: #d1bcf9;}
+      #PURPLE3 {background-color: #8a63d2;}
+      #PURPLE4 {background-color: #5a32a3;}
+      #PURPLE5 {background-color: #3a1d6e;}
     </style>
   </head>
   <body>
-    <img src="./icon.png" height="50px" />
-    <h1 id="theme_condition">NOW THEME CONDITION</h1>
+    <header>
+      <img id="logo" src="./logo.png" />
+    </header>
 
-    <button data-theme="original">ORIGINAL</button>
-    <button data-theme="halloween">HALLOWEEN</button>
-    <button data-theme="ocean">OCEAN</button>
-    <button data-theme="orange">ORANGE</button>
-    <button data-theme="red">RED</button>
-    <button data-theme="purple">PURPLE</button>
+    <div id="theme_condition">
+      ORIGINAL
+    </div>
+
+    <div class="themes" data-theme="ORIGINAL">
+      <div class="theme_name">
+        ORIGINAL
+      </div>
+      <div class="palette_wrap">
+        <div id="ORIGINAL1" class="palette"></div>
+        <div id="ORIGINAL2" class="palette"></div>
+        <div id="ORIGINAL3" class="palette"></div>
+        <div id="ORIGINAL4" class="palette"></div>
+        <div id="ORIGINAL5" class="palette"></div>
+      </div>
+    </div>
+    <br>
+    <div class="themes" data-theme="HALLOWEEN">
+      <div class="theme_name">
+        HALLOWEEN
+      </div>
+      <div class="palette_wrap">
+        <div id="HALLOWEEN1" class="palette"></div>
+        <div id="HALLOWEEN2" class="palette"></div>
+        <div id="HALLOWEEN3" class="palette"></div>
+        <div id="HALLOWEEN4" class="palette"></div>
+        <div id="HALLOWEEN5" class="palette"></div>
+      </div>
+    </div>
+    <br>
+    <div class="themes" data-theme="OCEAN">
+      <div class="theme_name">
+        OCEAN
+      </div>
+      <div class="palette_wrap">
+        <div id="OCEAN1" class="palette"></div>
+        <div id="OCEAN2" class="palette"></div>
+        <div id="OCEAN3" class="palette"></div>
+        <div id="OCEAN4" class="palette"></div>
+        <div id="OCEAN5" class="palette"></div>
+      </div>
+    </div>
+    <br>
+    <div class="themes" data-theme="ORANGE">
+      <div class="theme_name">
+        ORANGE
+      </div>
+      <div class="palette_wrap">
+        <div id="ORANGE1" class="palette"></div>
+        <div id="ORANGE2" class="palette"></div>
+        <div id="ORANGE3" class="palette"></div>
+        <div id="ORANGE4" class="palette"></div>
+        <div id="ORANGE5" class="palette"></div>
+      </div>
+    </div>
+    <br>
+    <div class="themes" data-theme="RED">
+      <div class="theme_name">
+        RED
+      </div>
+      <div class="palette_wrap">
+        <div id="RED1" class="palette"></div>
+        <div id="RED2" class="palette"></div>
+        <div id="RED3" class="palette"></div>
+        <div id="RED4" class="palette"></div>
+        <div id="RED5" class="palette"></div>
+      </div>
+    </div>
+    <br>
+    <div class="themes" data-theme="PURPLE">
+      <div class="theme_name">
+        PURPLE
+      </div>
+      <div class="palette_wrap">
+        <div id="PURPLE1" class="palette"></div>
+        <div id="PURPLE2" class="palette"></div>
+        <div id="PURPLE3" class="palette"></div>
+        <div id="PURPLE4" class="palette"></div>
+        <div id="PURPLE5" class="palette"></div>
+      </div>
+    </div>
+
+    <footer>
+      CLICK TO CHOOSE THEME
+    </footer>
 
     <script src="./settings.js"></script>
   </body>

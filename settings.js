@@ -1,4 +1,4 @@
-const buttons = document.getElementsByTagName("button");
+const buttons = document.getElementsByClassName("themes");
 
 const updateStorageInfo = (theme) => {
   chrome.storage.local.set({ theme: theme });
@@ -22,7 +22,7 @@ for (let button of buttons) {
 
 window.onload = () => {
   chrome.storage.local.get(["theme"], (res) => {
-    if (!res.theme) now_theme = "original";
+    if (!res.theme) now_theme = "ORIGINAL";
     document.getElementById("theme_condition").textContent = res.theme;
   });
 };
